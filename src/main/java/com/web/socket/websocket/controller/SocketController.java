@@ -22,7 +22,7 @@ public class SocketController {
         return message;
     }
 
-    @MessageMapping("/git ")
+    @MessageMapping("/answerUser")
     @SendTo("/topic/answeredCall")
     public VideoBean answer(@Payload VideoBean message) {
         return message;
