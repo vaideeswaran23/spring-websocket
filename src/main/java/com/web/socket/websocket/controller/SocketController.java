@@ -16,14 +16,14 @@ public class SocketController {
         return message;
     }
 
-    @MessageMapping("/video-all")
-    @SendTo("/topic/video")
+    @MessageMapping("/callUser")
+    @SendTo("/topic/receiveCall")
     public VideoBean video(@Payload VideoBean message) {
         return message;
     }
 
-    @MessageMapping("/answer-all")
-    @SendTo("/topic/answer")
+    @MessageMapping("/git ")
+    @SendTo("/topic/answeredCall")
     public VideoBean answer(@Payload VideoBean message) {
         return message;
     }
