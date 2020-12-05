@@ -13,7 +13,7 @@ public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry stompEndpointRegistry) {
         stompEndpointRegistry.addEndpoint("/websocket-chat")
-                .setAllowedOrigins("http://localhost:3000", "https://crimsonchat.netlify.app")
+                .setAllowedOrigins("https://crimsonchat.netlify.app")
                 .withSockJS();
     }
 
